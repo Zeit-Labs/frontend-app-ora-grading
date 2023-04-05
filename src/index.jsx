@@ -5,7 +5,7 @@ import 'regenerator-runtime/runtime';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppProvider, ErrorPage } from '@edx/frontend-platform/react';
-
+import { messages as paragonMessages } from '@edx/paragon';
 import store from 'data/store';
 import {
   APP_READY,
@@ -56,6 +56,7 @@ initialize({
     messages,
     headerMesssages,
     footerMessages,
+    paragonMessages,
   ],
   requireAuthenticatedUser: true,
 });

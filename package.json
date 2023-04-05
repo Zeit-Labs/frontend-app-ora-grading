@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/edx/frontend-app-ora-grading.git"
   },
+  "browserslist": [
+    "extends @edx/browserslist-config"
+  ],
   "scripts": {
     "build": "fedx-scripts webpack",
     "i18n_extract": "BABEL_ENV=i18n fedx-scripts babel src --quiet > /dev/null",
@@ -28,7 +31,7 @@
     "@edx/frontend-component-footer": "^11.7.0",
     "@edx/frontend-component-header": "^3.7.0",
     "@edx/frontend-platform": "^4.0.1",
-    "@edx/paragon": "^19.9.0",
+    "@edx/paragon": "^20.30.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -73,6 +76,7 @@
     "whatwg-fetch": "^3.6.2"
   },
   "devDependencies": {
+    "@edx/browserslist-config": "^1.1.1",
     "@edx/frontend-build": "^12.7.0",
     "@edx/reactifex": "^2.1.1",
     "@testing-library/jest-dom": "^5.14.1",
